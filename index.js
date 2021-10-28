@@ -64,6 +64,10 @@ app.get('/', (req, res) => {
     res.send('Hello World! Edited')
   })
 
+app.get('/hello', (req, res) => {
+    res.send('after adding heroku')
+})
+
 app.listen(port, () => {
     console.log('The port is:', port)
 })
